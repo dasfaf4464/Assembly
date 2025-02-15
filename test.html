@@ -1,43 +1,11 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="kr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>동적 그리드 변경</title>
-    <style>
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-            width: 300px;
-            border: 2px solid black;
-            padding: 10px;
-        }
-        .grid-item {
-            background-color: lightblue;
-            padding: 20px;
-            text-align: center;
-            border: 1px solid gray;
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>test</title>
 </head>
 <body>
-
-<div class="grid-container" id="grid">
-    <div class="grid-item">1</div>
-    <div class="grid-item">2</div>
-    <div class="grid-item">3</div>
-    <div class="grid-item">4</div>
-</div>
-
-<button onclick="changeGrid()">그리드 변경</button>
-
-<script>
-    function changeGrid() {
-        const grid = document.getElementById("grid");
-        grid.style.gridTemplateColumns = "repeat(3, 1fr)"; // 3열로 변경
-    }
-</script>
 
 </body>
 </html>
