@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="richchc@kyonggi.ac.kr">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/container.css">
     <title>educational Assembly Compiler</title>
 </head>
@@ -11,17 +10,21 @@
     <h1>경기대학교 컴퓨터 공학부 실습 도구 v0.0.1 <span><a title="클릭시 깃허브로 이동" href="https://github.com/dasfaf4464/Assembly" target="_blank"><img src="image/">github</a></span></h1>
 
     <div class="container" id="assembly-input-container">
-        <label>
+        <form id="assembly-input">
             <textarea>hello world!</textarea>
-        </label>
+            <select>
+                <option value="sic">sic</option>
+                <option value="sic/xe">sic/xe</option>
+                <option value="intel-4004">intel-4004</option>
+            </select>
+            <button>컴파일</button>
+        </form>
     </div>
 
     <div class="container" id="object-output-container">
-        <label>
             <output>
                 binary
             </output>
-        </label>
     </div>
 
     <div class="container" id="cpu-container">
@@ -55,7 +58,7 @@
     <footer>
         <hr>
         <ul id="version-info">
-            <li>0.0.1 페이지 구조 생성, </li>
+            <li>0.0.1 페이지 구조 생성, css 생성</li>
         </ul>
         <address>
             <hr>Copyright (c) 2025 경기대학교 컴퓨터공학부 조해천<br>무단복제 및 배포를 허용합니다.<br>문의 : richchc@kyonggi.ac.kr
