@@ -1,3 +1,37 @@
-ul#menu-list{
-    list-style: none;
+/**
+*   레이아웃은 컴포넌트의 배치, 컴포넌트의 패딩과 자체 크기, 방향을 지정합니다.
+*/
+
+/**
+*   사이트 타이틀인 헤더 레이아웃
+*/
+.header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/**
+*   주요 내용이 담긴 컨테이너
+*/
+.container{
+    resize: both;
+    overflow: hidden;
+}
+.container > .container-menubar{
+    float: right;
+}
+
+/**
+*   메뉴 리모컨 레아아웃
+*/
+aside {
+    position: fixed;
+    bottom: 30px;
+    z-index: 1;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
 }
