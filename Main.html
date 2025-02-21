@@ -10,97 +10,124 @@
 </head>
 <body>
 
-    <!--사이트 타이틀입니다. 타이틀과 버튼이 존재합니다.-->
-    <div class="header">
-        <div id="site-title">
-            <h1>경기대학교 컴퓨터 공학부 실습 도구 v0.0.3 <span><a title="클릭시 깃허브로 이동" href="https://github.com/dasfaf4464/Assembly" target="_blank"><i>깃허브</i></a></span></h1>
-        </div>
-        <div id="window-menu">
-            <button>모든 창 닫기</button>
-            <button>모든 창 열기</button>
-            <button>상단창 접기</button>
-        </div>
+<!--사이트 타이틀입니다. 타이틀과 버튼이 존재합니다.-->
+<div class="header">
+    <div id="site-title">
+        <h1>CS EDU v0.0.3 <span><a title="클릭시 깃허브로 이동" href="https://github.com/dasfaf4464/Assembly" target="_blank"><i>깃허브</i></a></span></h1>
     </div>
+    <div id="window-menu">
+        <button>모든 창 닫기</button>
+        <button>모든 창 열기</button>
+        <button>상단창 접기</button>
+    </div>
+</div>
 
-    <!--어셈블리를 입력하는 textarea, 어셈블리를 선택하는 select, 컴파일 button으로 이루어집니다.-->
-    <div class="main">
-    <div class="container" id="assembly-input-container">
-        <div class="container-menubar">
-            <i>드래그앤드랍</i>
-            <button>고정</button>
-            <button>화면 닫기</button>
-        </div><br>
-        <div>
-            <form id="assembly-input">
-                <textarea id="assembly-text-input">hello world!</textarea><br>
+<!--사이트 주요 컨텐츠와 컨텐츠 리모컨이 존재합니다.-->
+<div class="main">
+
+    <!--메인 컨텐츠인 컴포넌트들이 존재합니다.-->
+    <div class="content-box">
+
+        <!--어셈블리를 입력하는 textarea, 어셈블리를 선택하는 select, 컴파일 button으로 이루어집니다.-->
+        <div class="container" id="assembly-input-container">
+            <div class="container-top-menubar">
+                <i>드래그앤드랍</i>
+                <button>고정</button>
+                <button>화면 닫기</button>
+            </div><br>
+            <div>
+                <form id="assembly-input">
+                    <textarea id="assembly-text-input">hello world!</textarea>
+                </form>
+            </div><br>
+            <div class="container-bottom-menubar">
+                <input type="radio" class="pass" id="1pass" name="pass" value="1pass" checked="checked"><label for="1pass">1PASS</label>
+                <input type="radio" class="pass" id="2pass" name="pass" value="2pass"><label for="2pass">2PASS</label>
                 <select>
                     <option value="sic">sic</option>
                     <option value="sic/xe">sic/xe</option>
                     <option value="intel-4004">intel-4004</option>
                 </select>
                 <button>컴파일</button>
-            </form>
+            </div>
         </div>
-    </div>
 
-    <!--컴파일된 바이너리 코드가 출력됩니다.-->
-    <div class="container" id="object-output-container">
-        <div class="container-menubar">
-            <i>드래그앤드랍</i>
-            <button>고정</button>
-            <button>화면 닫기</button>
-        </div><br>
-        <div>
-            <output>
-                binary
-            </output>
+        <!--컴파일된 바이너리 코드가 출력됩니다.-->
+        <div class="container" id="object-output-container">
+            <div class="container-top-menubar">
+                <i>드래그앤드랍</i>
+                <button>고정</button>
+                <button>화면 닫기</button>
+            </div><br>
+            <div>
+                <output>
+                    <p>binary</p>
+                </output>
+            </div><br>
+            <div class="container-bottom-menubar">
+                <label>메뉴</label>
+            </div>
         </div>
-    </div>
 
-    <!--cpu 동작 애니메이션이 작동되며 추상화 단계를 선택할 수 있습니다-->
-    <div class="container" id="cpu-container">
-        <div class="container-menubar">
-            <i>드래그앤드랍</i>
-            <button>고정</button>
-            <button>화면 닫기</button>
-        </div><br>
-        <div>
-            <p>cpu</p>
+        <!--cpu 동작 애니메이션이 작동되며 추상화 단계를 선택할 수 있습니다-->
+        <div class="container" id="cpu-container">
+            <div class="container-top-menubar">
+                <i>드래그앤드랍</i>
+                <button>고정</button>
+                <button>화면 닫기</button>
+            </div><br>
+            <div>
+                <div>
+                    <p>processing</p>
+                </div>
+                <div>
+                    <p>register</p>
+                </div>
+            </div><br>
+            <div class="container-bottom-menubar">
+                <label>menu</label>
+            </div>
         </div>
-    </div>
 
-    <!--실행중인 메모리의 상태를 출력합니다.-->
-    <div class="container" id="memory-container">
-        <div class="container-menubar">
-            <i>드래그앤드랍</i>
-            <button>고정</button>
-            <button>화면 닫기</button>
-        </div><br>
-        <div>
-            <p>memory</p>
+        <!--실행중인 메모리의 상태를 출력합니다.-->
+        <div class="container" id="memory-container">
+            <div class="container-top-menubar">
+                <i>드래그앤드랍</i>
+                <button>고정</button>
+                <button>화면 닫기</button>
+            </div><br>
+            <div>
+                <p>memory</p>
+            </div><br>
+            <div class="container-bottom-menubar">
+                <label>menu</label>
+            </div>
         </div>
-    </div>
 
-    <!--컴파일 에러, cpu 런타임 에러를 선택하고 출력합니다-->
-    <div class="container" id="error-container">
-        <div class="container-menubar">
-            <i>드래그앤드랍</i>
-            <button>고정</button>
-            <button>화면 닫기</button>
-        </div><br>
-        <div>
-            <table>
-                <tr>
-                    <th>발생한 라인</th>
-                    <th>에러 내용</th>
-                </tr>
-                <tr>
-                    <td>15 번</td>
-                    <td>주소 누락</td>
-                </tr>
-            </table>
+        <!--컴파일 에러, cpu 런타임 에러를 선택하고 출력합니다-->
+        <div class="container" id="error-container">
+            <div class="container-top-menubar">
+                <i>드래그앤드랍</i>
+                <button>고정</button>
+                <button>화면 닫기</button>
+            </div><br>
+            <div>
+                <table>
+                    <tr>
+                        <th>발생한 라인</th>
+                        <th>에러 내용</th>
+                    </tr>
+                    <tr>
+                        <td>15 번</td>
+                        <td>주소 누락</td>
+                    </tr>
+                </table>
+            </div><br>
+            <div class="container-bottom-menubar">
+                <label>menu</label>
+            </div>
         </div>
-    </div>
+
     </div>
 
     <!--메뉴 리모컨입니다. 메뉴에는 테마선택, 화면출력, 파일 입력, 파일 손상 검사/복구가 존재합니다.-->
@@ -109,17 +136,18 @@
         <button>출력</button>
         <button>저장</button>
     </aside>
+</div>
 
-    <footer>
-        <hr>
-        <ul id="version-info">
-            <li>0.0.1 페이지 구조 생성, css 생성</li>
-            <li>0.0.2 html 컴포넌트와 주석 생성</li>
-            <li>0.0.3 css 컴포넌트 레이아웃 구조 생성(타이틀, 메뉴리모콘)</li>
-        </ul>
-        <address>
-            <hr>Copyright (c) 2025 경기대학교 컴퓨터공학부 조해천<br>무단복제 및 배포를 허용합니다.<br>문의 : richchc@kyonggi.ac.kr
-        </address>
-    </footer>
+<footer>
+    <hr>
+    <ul id="version-info">
+        <li>0.0.1 페이지 구조 생성, css 생성</li>
+        <li>0.0.2 html 컴포넌트와 주석 생성</li>
+        <li>0.0.3 css 컴포넌트 레이아웃 구조 생성(타이틀, 메뉴리모콘)</li>
+    </ul><hr>
+    <address>
+        Copyright (c) 2025 경기대학교 컴퓨터공학부 조해천<br>무단복제 및 배포를 허용합니다.<br>문의 : richchc@kyonggi.ac.kr
+    </address>
+</footer>
 </body>
 </html>
