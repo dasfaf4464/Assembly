@@ -6,16 +6,17 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/animation.css">
-    <title>educational Assembly Compiler</title>
+    <title>CS Simulator</title>
 </head>
 <body>
 
 <!--사이트 타이틀입니다. 타이틀과 버튼이 존재합니다.-->
 <div class="header">
     <div id="site-title">
-        <h1>CS EDU v0.0.3 <span><a title="클릭시 깃허브로 이동" href="https://github.com/dasfaf4464/Assembly" target="_blank"><i>깃허브</i></a></span></h1>
+        <h1>Assembly v0.0.3 <span><a title="클릭시 깃허브로 이동" href="https://github.com/dasfaf4464/Assembly" target="_blank"><i>깃허브</i></a></span></h1>
     </div>
     <div id="window-menu">
+        <i>다른창 메뉴</i>
         <button>모든 창 닫기</button>
         <button>모든 창 열기</button>
         <button>상단창 접기</button>
@@ -60,9 +61,29 @@
                 <button>화면 닫기</button>
             </div><br>
             <div>
-                <output>
-                    <p>binary</p>
-                </output>
+                <div>
+                    <table>
+                        <tr>
+                            <th>라인</th>
+                            <th>binary code</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0101010101</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <th>symbol</th>
+                        </tr>
+                        <tr>
+                            <td>sym1</td>
+                            <td>sym2</td>
+                        </tr>
+                    </table>
+                </div>
             </div><br>
             <div class="container-bottom-menubar">
                 <label>메뉴</label>
@@ -124,7 +145,8 @@
                 </table>
             </div><br>
             <div class="container-bottom-menubar">
-                <label>menu</label>
+                <input type="radio" class="error" id="runtime" name="error" value="runtime"><label for="runtime">runtime</label>
+                <input type="radio" class="error" id="compile" name="error" value="compiletime"><label for="compile">compile time</label>
             </div>
         </div>
 
